@@ -6,8 +6,8 @@ from matplotlib import pyplot as plt
 C = 1*(10**(-6))
 R = 1*(10**3)
 
-num = np.array([ -1.,    3/(R*C),    -1/(C*C*R*R)   ])
-den = np.array([ 1/5,    3/(5*R*C),   1/(5*C*C*R*R) ])
+num = np.array([ -1.,    3/(R*C),   -1/(C*C*R*R)   ])
+den = np.array([ 5,     15/(R*C),    5/(C*C*R*R) ])
 
 
 H = sig.TransferFunction( num, den )
