@@ -11,13 +11,13 @@ n        = 4
 e   = (10**(alfa_max*0.1) - 1)**0.5
 wnb = e**(-1/n)
 
-w01 = 1 * wnb
+w01 = 1 * wnb * 1000
 Q1 = 0.541
 K1 = 2 
 num1 = np.array([ K1 * w01**2 ])
 den1 = np.array([ 1., w01 / Q1, w01**2 ])
 
-w02 = 1 * wnb
+w02 = 1 * wnb * 1000
 Q2 = 1.307
 K2 = 5
 num2 = np.array([ K2 * w02**2 ])
