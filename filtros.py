@@ -47,7 +47,7 @@ num, den = sig.zpk2tf(z,p,1)
 H = sig.TransferFunction(den[n].real, den.real)
 _, axes_hdl = bodePlot(H, label = 'MaxPlanicidad')
 
-grpDelay(H, label = 'MaxPlanicidad')
+grpDelay(H)
 plt.sca(axes_hdl[0])
 plt.gca
 pzmap(H, label = 'MaxPlanicidad')
@@ -71,7 +71,7 @@ num, den = sig.zpk2tf(z,p,1)
 H = sig.TransferFunction(den[n].real, den.real)
 _, axes_hdl = bodePlot(H, label = 'Chebyshev')
 
-grpDelay(H, label = 'Chebyshev')
+grpDelay(H)
 plt.sca(axes_hdl[0])
 plt.gca
 pzmap(H, label = 'Chebyshev')
@@ -85,7 +85,7 @@ den = np.array([ 1., 6., 15., 15.])
 H = sig.TransferFunction(den[n], den)
 _, axes_hdl = bodePlot(H, label = 'Bessel')
 
-grpDelay(H, label = 'Bessel')
+grpDelay(H)
 plt.sca(axes_hdl[0])
 plt.gca
 pzmap(H, label = 'Bessel')
